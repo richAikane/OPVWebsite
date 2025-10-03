@@ -22,8 +22,8 @@ export default function Navigation() {
               data-testid="link-home-logo"
             >
               <img 
-                className="h-16 md:h-20 w-auto rounded-md shadow-sm" 
-                src="https://www.aikaneohana.com/_files/ugd/952afa_season4poster.png" 
+                className="h-16 md:h-20 w-auto" 
+                src="/opv-logo.png" 
                 alt="Oahu Pride Volleyball Logo" 
                 loading="lazy"
               />

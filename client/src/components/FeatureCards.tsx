@@ -13,7 +13,7 @@ export default function FeatureCards() {
             <h3 className="text-2xl font-poppins font-bold text-gray-800 mb-4">Schedules & Standings</h3>
             <p className="text-gray-600 mb-6">See match schedules, standings & results on TeamSideline.</p>
             <a 
-              href="https://www.teamsideline.com/sites/aikaneohana/home"
+              href="https://teamsideline.com/sites/aikaneohana/schedules"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
