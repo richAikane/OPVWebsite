@@ -1,3 +1,36 @@
+const sponsors = [
+  {
+    name: "Eric Z Martin Photography",
+    logo: "/eric-z-martin.png",
+    website: "https://ericzmartin.com/",
+  },
+  {
+    name: "Hula's Waikiki",
+    logo: "/hulas-waikiki.png",
+    website: "https://hulas.com/",
+  },
+  {
+    name: "Wang Chung's",
+    logo: "/wang-chungs.webp",
+    website: "https://www.wangchungs.com/",
+  },
+  {
+    name: "Team Mimosa",
+    logo: "/team-mimosa.png",
+    website: null,
+  },
+  {
+    name: "Halau Hula O Ikemanu",
+    logo: "/halau-hula.jpg",
+    website: null,
+  },
+  {
+    name: "Tapas Waikiki",
+    logo: "/tapas-waikiki.png",
+    website: "https://www.hawaiigaybar.com/",
+  },
+];
+
 export default function SponsorsSection() {
   return (
     <section className="w-full py-16 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
@@ -11,14 +44,33 @@ export default function SponsorsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center justify-items-center">
-          {[1, 2, 3, 4].map((i) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 items-center justify-items-center max-w-4xl mx-auto">
+          {sponsors.map((sponsor, index) => (
             <div 
-              key={i}
-              className="bg-white rounded-xl p-4 shadow-md h-32 w-32 flex items-center justify-center"
-              data-testid={`sponsor-placeholder-${i}`}
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-md h-32 w-full flex items-center justify-center hover-lift"
+              data-testid={`sponsor-${index}`}
             >
-              <span className="text-gray-400 text-sm text-center">Sponsor Logo</span>
+              {sponsor.website ? (
+                <a 
+                  href={sponsor.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex items-center justify-center"
+                >
+                  <img 
+                    src={sponsor.logo} 
+                    alt={sponsor.name}
+                    className="max-h-20 max-w-full object-contain"
+                  />
+                </a>
+              ) : (
+                <img 
+                  src={sponsor.logo} 
+                  alt={sponsor.name}
+                  className="max-h-20 max-w-full object-contain"
+                />
+              )}
             </div>
           ))}
         </div>
