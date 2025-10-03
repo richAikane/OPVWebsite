@@ -9,7 +9,7 @@ export default function Footer() {
           </div>
           <div className="text-center text-sm opacity-90">
             <p data-testid="text-footer-copyright">© Oahu Pride Volleyball / Aikāne ʻOhana (501(c)(3))</p>
-            <p className="mt-1">
+            <p className="mt-1 space-x-4">
               <a 
                 href="https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf"
                 target="_blank" 
@@ -18,6 +18,16 @@ export default function Footer() {
                 data-testid="link-footer-rules"
               >
                 Rules
+              </a>
+              <span>•</span>
+              <a 
+                href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:underline"
+                data-testid="link-footer-donate"
+              >
+                Donate
               </a>
             </p>
           </div>

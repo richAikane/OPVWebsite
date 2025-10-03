@@ -63,11 +63,13 @@ export default function Navigation() {
                   </label>
                 </div>
                 <a href="https://www.aikaneohana.com/volleyball" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-home">Home</a>
+                <a href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-donate">Donate</a>
                 <a href="https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-rules">Rules</a>
                 <a href="https://ericzmartin.com/" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-photos">Photos</a>
                 <a href="https://bit.ly/kaiauluclassic" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-tournament">Tournament</a>
                 <a href="https://www.bonfire.com/opvseason4/" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-store">Store</a>
                 <a href="https://www.aikaneohana.com/" target="_blank" rel="noopener noreferrer" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-aikane">Aikāne ʻOhana</a>
+                <a href="#sponsors" className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" data-testid="link-sponsors">Sponsors</a>
               </div>
               
               <div className="flex items-center mt-4 lg:mt-0 lg:ml-4">
