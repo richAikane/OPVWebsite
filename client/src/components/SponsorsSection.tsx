@@ -61,14 +61,18 @@ export default function SponsorsSection() {
                   <img 
                     src={sponsor.logo} 
                     alt={sponsor.name}
-                    className="max-h-20 max-w-full object-contain"
+                    className={sponsor.name === "Eric Z Martin Photography" || sponsor.name === "Hula's Waikiki" 
+                      ? "max-h-[100px] max-w-full object-contain" 
+                      : "max-h-20 max-w-full object-contain"}
                   />
                 </a>
               ) : (
                 <img 
                   src={sponsor.logo} 
                   alt={sponsor.name}
-                  className="max-h-20 max-w-full object-contain"
+                  className={sponsor.name === "Eric Z Martin Photography" || sponsor.name === "Hula's Waikiki" 
+                    ? "max-h-[100px] max-w-full object-contain" 
+                    : "max-h-20 max-w-full object-contain"}
                 />
               )}
             </div>
