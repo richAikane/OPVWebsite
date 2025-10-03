@@ -21,27 +21,6 @@ export default function HeroSection() {
             LŌKAHI: Unity | Balance | Communication
           </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a 
-            href="https://www.teamsideline.com/sites/aikaneohana/home"
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
-            data-testid="button-register-team"
-          >
-            Register Your Team
-          </a>
-          <a 
-            href="https://www.teamsideline.com/Layouts/minimalist/Home.aspx?d=%2Box4z56A3NEjkowRwkEosA%3D%3D"
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="bg-blue-500 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-blue-600 transition-all duration-300 hover-lift"
-            data-testid="button-join-free-agent"
-          >
-            🏐 Join as Free Agent
-          </a>
-        </div>
       </div>
     </section>
   );
