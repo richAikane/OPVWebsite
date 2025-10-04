@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
-            <p className="font-semibold" data-testid="text-footer-title">Oahu Pride Volleyball</p>
+            <p className="font-semibold" data-testid="text-footer-title">Oʻahu Pride Volleyball</p>
             <p className="text-sm opacity-90" data-testid="text-footer-tagline">Inclusive • Community-Led</p>
           </div>
           <div className="text-center text-sm opacity-90">
-            <p data-testid="text-footer-copyright">© Oahu Pride Volleyball / Aikāne ʻOhana (501(c)(3))</p>
+            <p data-testid="text-footer-copyright">© Oʻahu Pride Volleyball / Aikāne ʻOhana (501(c)(3))</p>
             <p className="mt-1 space-x-4">
               <a 
                 href="https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf"

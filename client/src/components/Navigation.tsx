@@ -40,7 +40,7 @@ export default function Navigation() {
               <img 
                 className="h-16 md:h-20 w-auto" 
                 src="/opv-logo.png" 
-                alt="Oahu Pride Volleyball Logo" 
+                alt="Oʻahu Pride Volleyball Logo" 
                 loading="lazy"
               />
             </a>

@@ -5,17 +5,15 @@ export default function HeroSection() {
         <div className="mb-8">
           <img 
             src="/season4-poster.avif"
-            alt="Oahu Pride Volleyball Season 4 Poster"
+            alt="Oʻahu Pride Volleyball Season 4 Poster"
             className="mx-auto h-64 md:h-96 w-auto mb-6 hover-lift rounded-xl shadow-lg"
             data-testid="img-season-poster"
           />
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-4">
-            <span className="text-2xl">🏳️‍🌈</span>
-            <span className="pride-text-animated">Oahu Pride Volleyball</span>
-            <span className="text-2xl">🏐</span>
+            <span className="pride-text-animated">🏳️‍🌈 Oʻahu Pride Volleyball 🏐</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 font-medium max-w-4xl mx-auto leading-relaxed" data-testid="text-tagline">
-            Welcome to Oahu Pride Volleyball (formerly the Hawaii LGBTQ Volleyball League)… bringing the Oʻahu LGBTQIA+ community together through friendship and a shared love of volleyball.
+            Welcome to Oʻahu Pride Volleyball (formerly the Hawaii LGBTQ Volleyball League)… bringing the Oʻahu LGBTQIA+ community together through friendship and a shared love of volleyball.
           </p>
           <p className="text-lg md:text-xl text-gray-600 mt-4 font-semibold" data-testid="text-lokahi">
             LŌKAHI: Unity | Balance | Communication

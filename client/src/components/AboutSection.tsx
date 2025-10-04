@@ -4,7 +4,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-about">
-            About OPV 🌺
+            About OPV <span className="inline-block">🌺</span>
           </h2>
           <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
         </div>
@@ -32,10 +32,10 @@ export default function AboutSection() {
               Games on Saturdays, 8:00 AM – 4:00 PM
             </p>
             <div className="flex flex-wrap gap-4 text-sm justify-center sm:justify-start">
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full" data-testid="badge-inclusive">🏳️‍🌈 Inclusive</span>
-              <span className="bg-accent/20 text-accent-foreground px-3 py-1 rounded-full" data-testid="badge-skill">🏐 All Skill Levels</span>
-              <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full" data-testid="badge-grass">🌱 Grass Volleyball</span>
-              <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full" data-testid="badge-community">🤝 Community-Led</span>
+              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full inline-flex items-center gap-1.5" data-testid="badge-inclusive"><span>🏳️‍🌈</span> Inclusive</span>
+              <span className="bg-accent/20 text-accent-foreground px-3 py-1 rounded-full inline-flex items-center gap-1.5" data-testid="badge-skill"><span>🏐</span> All Skill Levels</span>
+              <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full inline-flex items-center gap-1.5" data-testid="badge-grass"><span>🌱</span> Grass Volleyball</span>
+              <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full inline-flex items-center gap-1.5" data-testid="badge-community"><span>🤝</span> Community-Led</span>
             </div>
           </div>
           <div className="relative">

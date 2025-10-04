@@ -3,7 +3,7 @@ export default function FinalCTA() {
     <section className="w-full py-16 text-white" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}>
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-display font-bold mb-6" data-testid="heading-final-cta">
-          Season 4 is Underway — Mahalo for Your Support! 🌺
+          Season 4 is Underway — Mahalo for Your Support! <span className="inline-block">🌺</span>
         </h2>
         <p className="text-xl opacity-90 mb-8" data-testid="text-final-cta">
           Season 4 runs Sept 13–Nov 22, 2025 | Games on Saturdays, 8:00 AM–4:00 PM
