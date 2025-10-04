@@ -108,7 +108,7 @@ export default function Navigation() {
               </SheetTrigger>
               <SheetContent side="right" className="w-72" aria-describedby={undefined}>
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                <div className="flex flex-col gap-6 mt-8">
+                <div className="flex flex-col gap-6 mt-16">
                   
                   {/* Pride Mode Toggle */}
                   <div className="pride-toggle-switch-container flex items-center justify-between gap-x-3 pb-4 border-b">
