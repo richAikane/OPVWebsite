@@ -576,7 +576,7 @@
 /* === Typography system === */
 html{color-scheme:light dark;}
 body{
-  font-family: Inter,"Noto Sans",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";
+  font-family: Inter,"Noto Sans",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";
   color:var(--pacific-navy);
   background:var(--sand);
 }
@@ -584,6 +584,28 @@ h1,h2,h3,.display,.hero h1{
   font-family:"Barlow Condensed",system-ui,sans-serif;
   letter-spacing:.01em;
   text-wrap:balance;
+}
+
+/* === Force color emoji rendering === */
+/* Target all emoji characters to use color emoji fonts */
+.pride-text-animated,
+h1, h2, h3, 
+span:has(> [data-emoji]), 
+[data-testid*="badge"],
+[data-testid*="heading"] {
+  font-family: "Barlow Condensed", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Symbol", system-ui, sans-serif;
+}
+
+/* Specific emoji rendering fix - force color */
+body, h1, h2, h3, span, p, div {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Ensure emojis use system color fonts */
+* {
+  font-variant-emoji: emoji;
 }
 
 /* === Links & buttons === */
