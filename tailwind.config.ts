@@ -83,10 +83,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "var(--font-sans)"],
+        sans: ["Inter", "Noto Sans", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
-        poppins: ["Poppins", "sans-serif"],
+        display: ["Barlow Condensed", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

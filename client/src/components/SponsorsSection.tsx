@@ -36,7 +36,7 @@ export default function SponsorsSection() {
     <section id="sponsors" className="w-full py-16 bg-muted/20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-4" data-testid="heading-sponsors">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-sponsors">
             Our Sponsors 🙏
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto" data-testid="text-sponsors-thanks">

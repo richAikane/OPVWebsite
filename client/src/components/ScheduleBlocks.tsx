@@ -3,7 +3,7 @@ export default function ScheduleBlocks() {
     <section className="w-full py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-2">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-2">
             Schedules & Standings
           </h2>
           <p className="text-gray-600">Quick links to TeamSideline</p>

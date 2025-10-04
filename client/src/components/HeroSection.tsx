@@ -9,7 +9,7 @@ export default function HeroSection() {
             className="mx-auto h-64 md:h-96 w-auto mb-6 hover-lift rounded-xl shadow-lg"
             data-testid="img-season-poster"
           />
-          <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-4">
+          <h1 className="text-4xl md:text-6xl font-display font-bold mb-4">
             <span className="text-2xl">🏳️‍🌈</span>
             <span className="pride-text-animated">Oahu Pride Volleyball</span>
             <span className="text-2xl">🏐</span>

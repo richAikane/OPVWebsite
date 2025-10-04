@@ -3,7 +3,7 @@ export default function LeadershipSection() {
     <section className="w-full py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl font-poppins font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-800 mb-4">
             Leadership & Board
           </h2>
           <p className="text-gray-600 mb-6">
