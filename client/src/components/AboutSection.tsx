@@ -40,7 +40,7 @@ export default function AboutSection() {
           </div>
           <div className="relative">
             <img 
-              src="https://www.aikaneohana.com/_files/ugd/952afa_season4photo.jpg"
+              src="/players-action.jpg"
               alt="OPV Players in Action"
               className="rounded-xl shadow-lg hover-lift w-full"
               data-testid="img-players-action"
