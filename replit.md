@@ -29,7 +29,13 @@ Preferred communication style: Simple, everyday language.
 **Styling Approach:**
 - Tailwind CSS with extensive customization via `tailwind.config.ts`
 - CSS variables for theming (light mode base with Pride Mode overlay)
-- Custom color palette: Cream background (#fef9ed), Pink primary (335 85% 49%), Yellow accent (48 100% 62%)
+- **Trade Winds Sunset Color Palette:**
+  - Pacific Navy #0B1F2A (193, 58%, 10%) - Primary text and headers
+  - Lagoon #00A7C7 (190, 100%, 39%) - Secondary buttons and CTAs
+  - Hibiscus #FF3E81 (339, 100%, 62%) - Primary buttons and highlights
+  - Plumeria #FFD166 (42, 100%, 70%) - Accent color and badges
+  - Sand #F7EFEA (23, 48%, 94%) - Background color
+  - Signature gradient: `linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)`
 - Typography: Inter for body text, Poppins for headings
 - Responsive design with mobile-first approach
 

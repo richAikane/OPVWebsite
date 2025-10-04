@@ -33,7 +33,7 @@ const sponsors = [
 
 export default function SponsorsSection() {
   return (
-    <section id="sponsors" className="w-full py-16 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    <section id="sponsors" className="w-full py-16 bg-muted/20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-4" data-testid="heading-sponsors">
@@ -84,7 +84,8 @@ export default function SponsorsSection() {
             href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 inline-block"
+            style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}
+            className="text-white font-semibold px-6 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-200 inline-block"
             data-testid="button-donate-sponsor"
           >
             Donate to OPV

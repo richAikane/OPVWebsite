@@ -27,7 +27,8 @@ export default function HeroSection() {
             href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-pink-500 to-yellow-400 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
+            style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}
+            className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-donate"
           >
             Donate
@@ -36,7 +37,7 @@ export default function HeroSection() {
             href="https://teamsideline.com/sites/aikaneohana/schedules"
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-indigo-500 text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-indigo-600 hover-lift transition-all duration-300"
+            className="bg-secondary text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-schedule"
           >
             View Schedule

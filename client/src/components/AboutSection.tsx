@@ -6,7 +6,7 @@ export default function AboutSection() {
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-gray-800 mb-4" data-testid="heading-about">
             About OPV 🌺
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -17,7 +17,7 @@ export default function AboutSection() {
                 href="https://www.aikaneohana.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-pink-600 hover:text-pink-800 font-semibold underline"
+                className="text-primary hover:opacity-80 font-semibold underline"
                 data-testid="link-aikane-ohana"
               >
                 Aikāne ʻOhana
@@ -32,10 +32,10 @@ export default function AboutSection() {
               Games on Saturdays, 8:00 AM – 4:00 PM
             </p>
             <div className="flex flex-wrap gap-4 text-sm justify-center sm:justify-start">
-              <span className="bg-pink-100 text-pink-800 px-3 py-1 rounded-full" data-testid="badge-inclusive">🏳️‍🌈 Inclusive</span>
-              <span className="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full" data-testid="badge-skill">🏐 All Skill Levels</span>
-              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full" data-testid="badge-grass">🌱 Grass Volleyball</span>
-              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full" data-testid="badge-community">🤝 Community-Led</span>
+              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full" data-testid="badge-inclusive">🏳️‍🌈 Inclusive</span>
+              <span className="bg-accent/20 text-accent-foreground px-3 py-1 rounded-full" data-testid="badge-skill">🏐 All Skill Levels</span>
+              <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full" data-testid="badge-grass">🌱 Grass Volleyball</span>
+              <span className="bg-muted text-muted-foreground px-3 py-1 rounded-full" data-testid="badge-community">🤝 Community-Led</span>
             </div>
           </div>
           <div className="relative">

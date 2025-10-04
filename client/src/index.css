@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE */
+/* LIGHT MODE - Trade Winds Sunset Palette */
 :root {
   --button-outline: rgba(0,0,0, .10);
   --badge-outline: rgba(0,0,0, .05);
@@ -14,67 +14,91 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
 
-  --background: 40 45% 98%;
+  /* Sand #F7EFEA - soft background */
+  --background: 23 48% 94%;
 
-  --foreground: 40 15% 15%;
+  /* Pacific Navy #0B1F2A - headers and text */
+  --foreground: 193 58% 10%;
 
-  --border: 40 20% 88%;
+  /* Subtle border from Sand palette */
+  --border: 23 35% 88%;
 
-  --card: 40 40% 96%;
+  /* Slightly elevated Sand for cards */
+  --card: 23 55% 96%;
 
-  --card-foreground: 40 15% 18%;
+  /* Pacific Navy for card text */
+  --card-foreground: 193 58% 12%;
 
-  --card-border: 40 25% 90%;
+  /* Card border slightly darker */
+  --card-border: 23 40% 90%;
 
-  --sidebar: 40 35% 94%;
+  /* Sidebar with Sand tone */
+  --sidebar: 23 50% 92%;
 
-  --sidebar-foreground: 40 15% 20%;
+  /* Pacific Navy for sidebar text */
+  --sidebar-foreground: 193 58% 15%;
 
-  --sidebar-border: 40 30% 87%;
+  /* Sidebar border */
+  --sidebar-border: 23 35% 85%;
 
-  --sidebar-primary: 335 85% 49%;
+  /* Hibiscus #FF3E81 for primary actions */
+  --sidebar-primary: 339 100% 62%;
 
-  --sidebar-primary-foreground: 335 85% 98%;
+  --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 40 30% 88%;
+  /* Subtle sidebar accent */
+  --sidebar-accent: 23 40% 88%;
 
-  --sidebar-accent-foreground: 40 20% 25%;
+  /* Pacific Navy for accent text */
+  --sidebar-accent-foreground: 193 58% 18%;
 
-  --sidebar-ring: 335 85% 49%;
+  /* Hibiscus ring */
+  --sidebar-ring: 339 100% 62%;
 
-  --popover: 40 35% 92%;
+  /* Popover with Sand tone */
+  --popover: 23 50% 91%;
 
-  --popover-foreground: 40 15% 22%;
+  /* Pacific Navy for popover text */
+  --popover-foreground: 193 58% 15%;
 
-  --popover-border: 40 30% 85%;
+  /* Popover border */
+  --popover-border: 23 40% 85%;
 
-  --primary: 335 85% 49%;
+  /* Hibiscus #FF3E81 for primary buttons/CTAs */
+  --primary: 339 100% 62%;
 
-  --primary-foreground: 335 85% 98%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 40 25% 86%;
+  /* Lagoon #00A7C7 for secondary actions */
+  --secondary: 190 100% 39%;
 
-  --secondary-foreground: 40 20% 25%;
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 40 20% 90%;
+  /* Muted backgrounds */
+  --muted: 23 35% 90%;
 
-  --muted-foreground: 40 15% 40%;
+  /* Muted text */
+  --muted-foreground: 193 40% 35%;
 
-  --accent: 48 100% 62%;
+  /* Plumeria #FFD166 for accents/highlights */
+  --accent: 42 100% 70%;
 
-  --accent-foreground: 48 100% 15%;
+  /* Pacific Navy for accent text */
+  --accent-foreground: 193 58% 10%;
 
   --destructive: 0 85% 45%;
 
   --destructive-foreground: 0 85% 98%;
 
-  --input: 40 30% 70%;
-  --ring: 174 78% 41%;
-  --chart-1: 335 85% 49%;
-  --chart-2: 48 100% 50%;
-  --chart-3: 174 78% 41%;
-  --chart-4: 280 70% 50%;
-  --chart-5: 25 95% 53%;
+  --input: 23 30% 75%;
+  /* Lagoon for focus ring */
+  --ring: 190 100% 39%;
+  /* Chart colors using the palette */
+  --chart-1: 339 100% 62%;
+  --chart-2: 42 100% 70%;
+  --chart-3: 190 100% 39%;
+  --chart-4: 193 58% 20%;
+  --chart-5: 23 90% 65%;
 
   --font-sans: Open Sans, sans-serif;
   --font-serif: Georgia, serif;
@@ -132,67 +156,91 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 240 5% 8%;
+  /* Dark Pacific Navy base */
+  --background: 193 50% 8%;
 
-  --foreground: 240 5% 92%;
+  /* Light Sand for text */
+  --foreground: 23 40% 92%;
 
-  --border: 240 5% 18%;
+  /* Border with Navy tone */
+  --border: 193 40% 18%;
 
-  --card: 240 5% 11%;
+  /* Slightly elevated dark card */
+  --card: 193 45% 11%;
 
-  --card-foreground: 240 5% 90%;
+  /* Light text on cards */
+  --card-foreground: 23 35% 90%;
 
-  --card-border: 240 5% 20%;
+  /* Card border */
+  --card-border: 193 35% 20%;
 
-  --sidebar: 240 4% 14%;
+  /* Dark sidebar */
+  --sidebar: 193 42% 14%;
 
-  --sidebar-foreground: 240 4% 88%;
+  /* Light sidebar text */
+  --sidebar-foreground: 23 30% 88%;
 
-  --sidebar-border: 240 5% 22%;
+  /* Sidebar border */
+  --sidebar-border: 193 35% 22%;
 
-  --sidebar-primary: 335 85% 49%;
+  /* Hibiscus for primary in dark mode */
+  --sidebar-primary: 339 100% 62%;
 
-  --sidebar-primary-foreground: 335 85% 98%;
+  --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 240 6% 18%;
+  /* Sidebar accent */
+  --sidebar-accent: 193 40% 18%;
 
-  --sidebar-accent-foreground: 240 6% 85%;
+  /* Accent text */
+  --sidebar-accent-foreground: 23 35% 85%;
 
-  --sidebar-ring: 335 85% 49%;
+  /* Hibiscus ring */
+  --sidebar-ring: 339 100% 62%;
 
-  --popover: 240 5% 16%;
+  /* Dark popover */
+  --popover: 193 40% 16%;
 
-  --popover-foreground: 240 5% 88%;
+  /* Light popover text */
+  --popover-foreground: 23 30% 88%;
 
-  --popover-border: 240 5% 24%;
+  /* Popover border */
+  --popover-border: 193 35% 24%;
 
-  --primary: 335 85% 49%;
+  /* Hibiscus for primary actions */
+  --primary: 339 100% 62%;
 
-  --primary-foreground: 335 85% 98%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 240 6% 20%;
+  /* Lagoon for secondary */
+  --secondary: 190 100% 39%;
 
-  --secondary-foreground: 240 6% 85%;
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 240 5% 14%;
+  /* Muted backgrounds */
+  --muted: 193 35% 14%;
 
-  --muted-foreground: 240 5% 65%;
+  /* Muted text */
+  --muted-foreground: 23 25% 65%;
 
-  --accent: 48 95% 55%;
+  /* Plumeria for accents */
+  --accent: 42 100% 70%;
 
-  --accent-foreground: 48 95% 95%;
+  /* Dark text on accent */
+  --accent-foreground: 193 58% 10%;
 
   --destructive: 0 85% 45%;
 
   --destructive-foreground: 0 85% 98%;
 
-  --input: 240 8% 35%;
-  --ring: 174 78% 60%;
-  --chart-1: 335 85% 65%;
-  --chart-2: 48 100% 70%;
-  --chart-3: 174 78% 60%;
-  --chart-4: 280 70% 65%;
-  --chart-5: 25 95% 65%;
+  --input: 193 30% 35%;
+  /* Lagoon for focus ring */
+  --ring: 190 100% 50%;
+  /* Chart colors in dark mode */
+  --chart-1: 339 100% 65%;
+  --chart-2: 42 100% 75%;
+  --chart-3: 190 100% 50%;
+  --chart-4: 193 50% 40%;
+  --chart-5: 23 85% 60%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);

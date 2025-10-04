@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-600 text-white py-6">
+    <footer className="w-full text-white py-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
