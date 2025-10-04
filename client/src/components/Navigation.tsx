@@ -38,7 +38,7 @@ export default function Navigation() {
               data-testid="link-home-logo"
             >
               <img 
-                className="h-16 md:h-20 w-auto" 
+                className="h-32 md:h-20 w-auto" 
                 src="/opv-logo.png" 
                 alt="Oʻahu Pride Volleyball Logo" 
                 loading="lazy"
@@ -99,11 +99,11 @@ export default function Navigation() {
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  size="icon"
+                  className="h-12 w-12 lg:h-9 lg:w-9"
                   aria-label="Open menu"
                   data-testid="button-hamburger-menu"
                 >
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-8 w-8 lg:h-6 lg:w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-72" aria-describedby={undefined}>
@@ -112,7 +112,7 @@ export default function Navigation() {
                   
                   {/* Pride Mode Toggle */}
                   <div className="pride-toggle-switch-container flex items-center justify-between gap-x-3 pb-4 border-b">
-                    <span className="font-semibold pride-text-animated">
+                    <span className="text-base font-medium text-foreground px-4">
                       Pride Mode
                     </span>
                     <label className="pride-toggle-switch">
