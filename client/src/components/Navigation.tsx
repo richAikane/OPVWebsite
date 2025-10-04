@@ -25,7 +25,7 @@ export default function Navigation() {
       className="bg-background shadow-sm sticky top-0 z-40 transition-all duration-300 ease-in-out"
     >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-3 md:py-4">
           
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -101,11 +101,11 @@ export default function Navigation() {
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className="h-12 w-12 lg:h-9 lg:w-9"
+                  className="h-32 w-32 lg:h-9 lg:w-9"
                   aria-label="Open menu"
                   data-testid="button-hamburger-menu"
                 >
-                  <Menu className="h-8 w-8 lg:h-6 lg:w-6" />
+                  <Menu className="h-20 w-20 lg:h-6 lg:w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-72" aria-describedby={undefined}>
