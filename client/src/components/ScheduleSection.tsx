@@ -1,6 +1,6 @@
 export default function ScheduleSection() {
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-schedule">

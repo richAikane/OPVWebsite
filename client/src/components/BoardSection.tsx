@@ -53,7 +53,7 @@ export default function BoardSection() {
   const singleMember = boardMembers.find(member => member.isSingle);
 
   return (
-    <section className="w-full py-16 bg-white">
+    <section className="w-full py-16 bg-background">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800" data-testid="heading-board">

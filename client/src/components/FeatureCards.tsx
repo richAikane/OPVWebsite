@@ -1,17 +1,17 @@
 export default function FeatureCards() {
   return (
-    <section className="w-full py-16 bg-muted/30">
+    <section className="w-full py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-stay-connected">
-            Stay Connected 🔗
+            Stay Connected
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center" data-testid="card-schedules">
+          <div className="bg-card border border-card-border rounded-2xl p-8 shadow-sm hover-lift text-center" data-testid="card-schedules">
             <h3 className="text-2xl font-display font-bold text-gray-800 mb-4">Schedules & Standings</h3>
-            <p className="text-gray-600 mb-6">See match schedules, standings & results on TeamSideline.</p>
+            <p className="text-gray-700 mb-6">See match schedules, standings & results on TeamSideline.</p>
             <a 
               href="https://teamsideline.com/sites/aikaneohana/schedules"
               target="_blank" 
@@ -24,9 +24,9 @@ export default function FeatureCards() {
             </a>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-lg hover-lift text-center" data-testid="card-photos">
+          <div className="bg-card border border-card-border rounded-2xl p-8 shadow-sm hover-lift text-center" data-testid="card-photos">
             <h3 className="text-2xl font-display font-bold text-gray-800 mb-4">Game Day Photos</h3>
-            <p className="text-gray-600 mb-6">Relive the action with our media partner Eric Z Martin Photography.</p>
+            <p className="text-gray-700 mb-6">Relive the action with our media partner Eric Z Martin Photography.</p>
             <a 
               href="https://ericzmartin.com/"
               target="_blank" 
