@@ -128,6 +128,7 @@ Preferred communication style: Simple, everyday language.
   - Alternating Sand (#F7EFEA) and white backgrounds for clear section boundaries
   - Gradient bookends (Hero, Final CTA, Footer) for visual cohesion
   - Elevated card components on white sections using bg-card with subtle borders
+  - Rainbow gradient underline (96px × 4px, Hibiscus → Plumeria → Lagoon) under all section headers for visual consistency
 - Links to external tournament registration and photo galleries
 - Accessibility features (focus states, alt text, semantic HTML, data-testid attributes)
 - Design compliance: No emoji icons in UI (uses Lucide React icons instead), no single-side borders on rounded elements
