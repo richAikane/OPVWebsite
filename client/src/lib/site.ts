@@ -29,6 +29,8 @@ export const links = {
   store: "https://www.bonfire.com/opvseason4/",
   aikaneOhana: "https://www.aikaneohana.com/",
   social: "https://linktr.ee/oahupridevolleyball",
+  facebook: "https://www.facebook.com/groups/577119141300496",
+  instagram: "https://www.instagram.com/oahupridevolleyball/",
   sponsorsBecome:
     "https://www.zeffy.com/en-US/fundraising/191a11d3-841f-420d-912a-990a33cace29",
 };

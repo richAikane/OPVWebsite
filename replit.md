@@ -152,3 +152,10 @@ Preferred communication style: Simple, everyday language.
   - Implemented non-breaking spaces (`\u00A0`) in season dates/times while maintaining dynamic data from `site.ts`
   - Fixed stray meta/link tags in index.html by moving them inside `<head>` element
   - All schedule text now uses dynamic `season` object with proper formatting to prevent numeral gaps
+- **Social Media Integration:**
+  - Added Facebook and Instagram icons alongside Linktree in navigation and footer
+  - Facebook: https://www.facebook.com/groups/577119141300496
+  - Instagram: https://www.instagram.com/oahupridevolleyball/
+  - Icons use react-icons/fa (FaFacebook, FaInstagram) for consistent styling
+  - Desktop navigation displays all 3 social icons horizontally, mobile menu shows them vertically with labels
+  - All social links centralized in `site.ts` for maintainability

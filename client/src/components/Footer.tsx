@@ -1,4 +1,5 @@
 import { links } from '@/lib/site';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -33,7 +34,27 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
+            <a 
+              href={links.facebook} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-80 transition"
+              aria-label="Follow us on Facebook"
+              data-testid="link-footer-facebook"
+            >
+              <FaFacebook className="h-6 w-6" />
+            </a>
+            <a 
+              href={links.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:opacity-80 transition"
+              aria-label="Follow us on Instagram"
+              data-testid="link-footer-instagram"
+            >
+              <FaInstagram className="h-6 w-6" />
+            </a>
             <a 
               href={links.social} 
               target="_blank" 

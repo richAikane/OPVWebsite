@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { links } from '@/lib/site';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Navigation() {
   const { isPrideMode, togglePrideMode } = usePrideMode();
@@ -82,20 +83,42 @@ export default function Navigation() {
               </a>
             ))}
 
-            <a 
-              href={links.social} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="Follow us on Social Media" 
-              className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
-              data-testid="link-social-desktop"
-            >
-              <img 
-                src="/linktree-logo.png" 
-                alt="Linktree" 
-                className="h-9 w-9 rounded-lg"
-              />
-            </a>
+            <div className="flex items-center gap-2">
+              <a 
+                href={links.facebook} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Follow us on Facebook" 
+                className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
+                data-testid="link-facebook-desktop"
+              >
+                <FaFacebook className="h-8 w-8 text-foreground" />
+              </a>
+              <a 
+                href={links.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Follow us on Instagram" 
+                className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
+                data-testid="link-instagram-desktop"
+              >
+                <FaInstagram className="h-8 w-8 text-foreground" />
+              </a>
+              <a 
+                href={links.social} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Follow us on Social Media" 
+                className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
+                data-testid="link-social-desktop"
+              >
+                <img 
+                  src="/linktree-logo.png" 
+                  alt="Linktree" 
+                  className="h-9 w-9 rounded-lg"
+                />
+              </a>
+            </div>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -152,8 +175,30 @@ export default function Navigation() {
                     ))}
                   </nav>
 
-                  {/* Social Link */}
-                  <div className="pt-4 border-t">
+                  {/* Social Links */}
+                  <div className="pt-4 border-t flex flex-col gap-2">
+                    <a 
+                      href={links.facebook} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center gap-3 px-4 py-3 rounded-md hover-elevate focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      data-testid="link-facebook-mobile"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <FaFacebook className="h-6 w-6 text-foreground" />
+                      <span className="font-medium">Facebook</span>
+                    </a>
+                    <a 
+                      href={links.instagram} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center gap-3 px-4 py-3 rounded-md hover-elevate focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      data-testid="link-instagram-mobile"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <FaInstagram className="h-6 w-6 text-foreground" />
+                      <span className="font-medium">Instagram</span>
+                    </a>
                     <a 
                       href={links.social} 
                       target="_blank" 
