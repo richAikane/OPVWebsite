@@ -113,16 +113,21 @@ Preferred communication style: Simple, everyday language.
 **Key Features:**
 - Pride Mode toggle with animated rainbow gradients
 - Responsive navigation with mobile menu
-- Comprehensive homepage sections:
-  - Hero section with Season 4 poster and CTAs
-  - About OPV with league information
-  - Feature cards highlighting league benefits
-  - Season 4 Schedule with division cards (Competitive, Intermediate, Social) and PDF downloads
-  - Captain's Corner with resource links for team captains (using Lucide icons)
-  - Sponsors showcase with 6 sponsor logos and "Become a Sponsor" CTA
-  - Tournament registration section
-  - Board of Directors with member photos and titles
-  - Final CTA and footer
+- Comprehensive homepage sections with alternating backgrounds:
+  - Hero section with Season 4 poster and CTAs (gradient background)
+  - About OPV with league information (Sand background)
+  - Stay Connected feature cards with elevated card design (white background with bg-card borders)
+  - Season 4 Schedule with division cards (Sand background)
+  - Captain's Corner with resource links for team captains (white background, using Lucide icons)
+  - Sponsors showcase with 6 sponsor logos and "Become a Sponsor" CTA (Sand background)
+  - Tournament registration section (white background)
+  - Board of Directors with member photos and titles (Sand background)
+  - Final CTA with gradient background
+  - Footer with gradient background
+- **Visual Separation Pattern:**
+  - Alternating Sand (#F7EFEA) and white backgrounds for clear section boundaries
+  - Gradient bookends (Hero, Final CTA, Footer) for visual cohesion
+  - Elevated card components on white sections using bg-card with subtle borders
 - Links to external tournament registration and photo galleries
 - Accessibility features (focus states, alt text, semantic HTML, data-testid attributes)
 - Design compliance: No emoji icons in UI (uses Lucide React icons instead), no single-side borders on rounded elements
@@ -136,3 +141,6 @@ Preferred communication style: Simple, everyday language.
 - Added CaptainsCornerSection with resource cards for team captains
 - Updated SponsorsSection with grid layout and sponsor names
 - Created BoardSection showing all board members with photos and titles
+- Implemented alternating background pattern (Sand/White) with gradient bookends for professional visual separation
+- Updated FeatureCards to use elevated card design (bg-card with borders) on white background
+- Ensured consistent text-gray-700 color usage across all body text
