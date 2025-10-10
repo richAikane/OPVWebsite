@@ -1,35 +1,4 @@
-const sponsors = [
-  {
-    name: "Eric Martin Photography",
-    logo: "https://static.wixstatic.com/media/6ea41b_1969f52a6a6b44a18a7beb1cd51e9771~mv2.png",
-    website: "https://ericzmartin.com",
-  },
-  {
-    name: "Hula's Waikiki",
-    logo: "https://static.wixstatic.com/media/6ea41b_fd973045fd0b4c738f1af46a5bcb669d~mv2.png",
-    website: "https://hulas.com",
-  },
-  {
-    name: "Wang Chungs",
-    logo: "https://static.wixstatic.com/media/952afa_f520492e6cbd42319e4cf71c9a94c118~mv2.webp",
-    website: "https://www.wangchungs.com",
-  },
-  {
-    name: "Team Mimosa",
-    logo: "https://static.wixstatic.com/media/6ea41b_d6f960a8b60844d3a3aa5219b7ffaa88~mv2.png",
-    website: null,
-  },
-  {
-    name: "Halau Hula O Ikemanu",
-    logo: "https://static.wixstatic.com/media/952afa_b535dc003cc540968950a7b9d97df5f2~mv2.jpg",
-    website: "https://www.instagram.com/halau_hula_o_ikemanu_?igsh=ZnM3c2hmY2hnZ255",
-  },
-  {
-    name: "Tapas Waikiki",
-    logo: "https://static.wixstatic.com/media/952afa_a535a421d5b54c2aa0872a061d415613~mv2.png",
-    website: "https://www.hawaiigaybar.com/",
-  },
-];
+import { sponsors, links } from '@/lib/site';
 
 export default function SponsorsSection() {
   return (
@@ -88,11 +57,8 @@ export default function SponsorsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-base text-gray-700 mb-6 leading-relaxed">
-            Mahalo to these incredible businesses who support our LGBTQIA+ volleyball community with aloha spirit.
-          </p>
           <a
-            href="https://www.zeffy.com/en-US/fundraising/191a11d3-841f-420d-912a-990a33cace29"
+            href={links.sponsorsBecome}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors duration-300"

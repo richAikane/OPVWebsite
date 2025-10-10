@@ -1,3 +1,5 @@
+import { links, season } from '@/lib/site';
+
 export default function HeroSection() {
   return (
     <section className="w-full bg-gradient-to-br from-pink-100 via-yellow-50 to-blue-100 py-12 md:py-20">
@@ -7,6 +9,9 @@ export default function HeroSection() {
             src="/season4-poster.avif"
             alt="Oʻahu Pride Volleyball Season 4 Poster"
             className="mx-auto h-64 md:h-96 w-auto mb-6 hover-lift rounded-xl shadow-lg"
+            decoding="async"
+            fetchpriority="high"
+            loading="eager"
             data-testid="img-season-poster"
           />
           <h1 className="text-3xl md:text-6xl font-display font-bold mb-4">
@@ -22,7 +27,7 @@ export default function HeroSection() {
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <a 
-            href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
+            href={links.donate}
             target="_blank" 
             rel="noopener noreferrer"
             style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}
@@ -32,7 +37,7 @@ export default function HeroSection() {
             Donate
           </a>
           <a 
-            href="https://teamsideline.com/sites/aikaneohana/schedules"
+            href={links.teamSideline}
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-secondary text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"

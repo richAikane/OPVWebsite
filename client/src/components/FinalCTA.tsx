@@ -1,3 +1,5 @@
+import { links, season } from '@/lib/site';
+
 export default function FinalCTA() {
   return (
     <section className="w-full py-16 text-white" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}>
@@ -6,11 +8,11 @@ export default function FinalCTA() {
           Season 4 is Underway
         </h2>
         <p className="text-base md:text-xl opacity-90 mb-8" data-testid="text-final-cta">
-          Season 4 runs Sept 13–Nov 22, 2025 | Games on Saturdays, 8:00 AM–4:00 PM
+          Season 4 runs {season.rangeShort} | Games on {season.day}, {season.timeWindow}
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a 
-            href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
+            href={links.donate}
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-white text-pink-600 font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-gray-100 transition-all duration-300"
@@ -19,7 +21,7 @@ export default function FinalCTA() {
             Donate
           </a>
           <a 
-            href="https://ericzmartin.com/"
+            href={links.photos}
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-white text-indigo-600 font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-gray-100 transition-all duration-300"

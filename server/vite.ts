@@ -76,7 +76,13 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  // Serve static assets with long-term caching
+  app.use(
+    express.static(distPath, {
+      maxAge: "31536000", // 1 year
+      immutable: true,
+    }),
+  );
 
   // fall through to index.html if the file doesn't exist
   app.use("*", (_req, res) => {

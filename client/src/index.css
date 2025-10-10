@@ -692,3 +692,20 @@ footer, .site-footer{
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
 }
+
+/* Accessible skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  background: #0B1F2A;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 1000;
+  transition: top .2s ease;
+}
+
+.skip-link:focus {
+  top: 8px;
+}

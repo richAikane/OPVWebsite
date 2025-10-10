@@ -1,3 +1,5 @@
+import { links, season } from '@/lib/site';
+
 export default function ScheduleSection() {
   return (
     <section className="w-full py-16 bg-background">
@@ -8,15 +10,15 @@ export default function ScheduleSection() {
           </h2>
           <div className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
             <p className="mb-4">
-              Season 4 will run Saturdays from September 20, 2025 to November 22, 2025.
-              The games will run from 9:00AM to 3:00PM.
+              Season 4 will run {season.day} from {season.rangeShort}.
+              The games will run from {season.timeWindow}.
             </p>
             <p className="mb-6">
               Specific team schedules will be posted on Team Sideline.
               Download the app and sync your team schedule to your calendar!
             </p>
             <a
-              href="https://teamsideline.com/sites/aikaneohana/schedules"
+              href={links.teamSideline}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors duration-300"

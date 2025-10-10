@@ -70,6 +70,7 @@ export default function BoardSection() {
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
               data-testid={`board-member-${index}`}
+              aria-label={member.isVacant ? `Open position: ${member.title}` : undefined}
             >
               <div className="w-20 h-20 rounded-full flex-shrink-0 overflow-hidden border-2 border-gray-100 bg-gray-50">
                 {member.isVacant ? (

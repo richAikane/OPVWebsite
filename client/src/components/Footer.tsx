@@ -1,3 +1,5 @@
+import { links } from '@/lib/site';
+
 export default function Footer() {
   return (
     <footer className="w-full text-white py-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}>
@@ -11,7 +13,7 @@ export default function Footer() {
             <p data-testid="text-footer-copyright">© Oʻahu Pride Volleyball / Aikāne ʻOhana (501(c)(3))</p>
             <p className="mt-1 space-x-4">
               <a 
-                href="https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf"
+                href={links.rules}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -21,7 +23,7 @@ export default function Footer() {
               </a>
               <span>•</span>
               <a 
-                href="https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league"
+                href={links.donate}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -33,7 +35,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-4">
             <a 
-              href="https://linktr.ee/oahupridevolleyball" 
+              href={links.social} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="hover:opacity-80 transition"

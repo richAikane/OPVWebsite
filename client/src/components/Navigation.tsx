@@ -3,19 +3,20 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
+import { links } from '@/lib/site';
 
 export default function Navigation() {
   const { isPrideMode, togglePrideMode } = usePrideMode();
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "https://www.aikaneohana.com/volleyball", label: "Home", testId: "link-home" },
-    { href: "https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league", label: "Donate", testId: "link-donate" },
-    { href: "https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf", label: "Rules", testId: "link-rules" },
-    { href: "https://ericzmartin.com/", label: "Photos", testId: "link-photos" },
-    { href: "https://bit.ly/kaiauluclassic", label: "Tournament", testId: "link-tournament" },
-    { href: "https://www.bonfire.com/opvseason4/", label: "Store", testId: "link-store" },
-    { href: "https://www.aikaneohana.com/", label: "Aikāne ʻOhana", testId: "link-aikane" },
+    { href: links.home, label: "Home", testId: "link-home" },
+    { href: links.donate, label: "Donate", testId: "link-donate" },
+    { href: links.rules, label: "Rules", testId: "link-rules" },
+    { href: links.photos, label: "Photos", testId: "link-photos" },
+    { href: links.tournament, label: "Tournament", testId: "link-tournament" },
+    { href: links.store, label: "Store", testId: "link-store" },
+    { href: links.aikaneOhana, label: "Aikāne ʻOhana", testId: "link-aikane" },
     { href: "#sponsors", label: "Sponsors", testId: "link-sponsors", isAnchor: true },
   ];
 
@@ -38,7 +39,7 @@ export default function Navigation() {
               data-testid="link-home-logo"
             >
               <img 
-                className="h-32 md:h-20 w-auto" 
+                className="h-12 md:h-16 w-auto" 
                 src="/opv-logo.png" 
                 alt="Oʻahu Pride Volleyball Logo" 
                 loading="lazy"
@@ -58,6 +59,8 @@ export default function Navigation() {
                   id="prideToggle" 
                   checked={isPrideMode}
                   onChange={togglePrideMode}
+                  aria-labelledby="pride-toggle-label"
+                  aria-label="Pride Mode"
                   data-testid="toggle-pride-mode"
                 />
                 <span className="pride-switch-track">
@@ -72,7 +75,7 @@ export default function Navigation() {
                 href={link.href} 
                 target={link.isAnchor ? undefined : "_blank"}
                 rel={link.isAnchor ? undefined : "noopener noreferrer"}
-                className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium" 
+                className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" 
                 data-testid={link.testId}
               >
                 {link.label}
@@ -80,11 +83,11 @@ export default function Navigation() {
             ))}
 
             <a 
-              href="https://linktr.ee/oahupridevolleyball" 
+              href={links.social} 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Follow us on Social Media" 
-              className="hover:opacity-80 transition duration-200"
+              className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
               data-testid="link-social-desktop"
             >
               <img 
@@ -114,7 +117,7 @@ export default function Navigation() {
                   
                   {/* Pride Mode Toggle */}
                   <div className="pride-toggle-switch-container flex items-center justify-between gap-x-3 pb-4 border-b">
-                    <span className="text-base font-medium text-foreground px-4">
+                    <span id="pride-toggle-label-mobile" className="text-base font-medium text-foreground px-4">
                       Pride Mode
                     </span>
                     <label className="pride-toggle-switch">
@@ -122,6 +125,8 @@ export default function Navigation() {
                         type="checkbox" 
                         checked={isPrideMode}
                         onChange={togglePrideMode}
+                        aria-labelledby="pride-toggle-label-mobile"
+                        aria-label="Pride Mode"
                         data-testid="toggle-pride-mode-mobile"
                       />
                       <span className="pride-switch-track">
@@ -138,22 +143,22 @@ export default function Navigation() {
                         href={link.href} 
                         target={link.isAnchor ? undefined : "_blank"}
                         rel={link.isAnchor ? undefined : "noopener noreferrer"}
-                        className="nav-link text-foreground hover:text-muted-foreground px-4 py-3 rounded-md text-base font-medium hover-elevate"
-                        data-testid={`${link.testId}-mobile`}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {link.label}
-                      </a>
+                className="nav-link text-foreground hover:text-muted-foreground px-4 py-3 rounded-md text-base font-medium hover-elevate focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                data-testid={`${link.testId}-mobile`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
                     ))}
                   </nav>
 
                   {/* Social Link */}
                   <div className="pt-4 border-t">
                     <a 
-                      href="https://linktr.ee/oahupridevolleyball" 
+                      href={links.social} 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="flex items-center gap-3 px-4 py-3 rounded-md hover-elevate"
+                      className="flex items-center gap-3 px-4 py-3 rounded-md hover-elevate focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                       data-testid="link-social-mobile"
                       onClick={() => setIsOpen(false)}
                     >

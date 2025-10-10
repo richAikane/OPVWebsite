@@ -1,3 +1,5 @@
+import { links, season } from '@/lib/site';
+
 export default function AboutSection() {
   return (
     <section className="w-full py-16 bg-background">
@@ -14,7 +16,7 @@ export default function AboutSection() {
             <p className="text-base md:text-lg text-gray-700 leading-relaxed" data-testid="text-about-1">
               As a proud partner of{' '}
               <a 
-                href="https://www.aikaneohana.com/" 
+                href={links.aikaneOhana} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-primary hover:opacity-80 font-semibold underline"
@@ -28,8 +30,8 @@ export default function AboutSection() {
               Our community celebrates diversity, fosters friendship, and creates lasting memories on and off the court. From beginners to all-stars, everyone has a place in our ʻohana!
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed font-semibold" data-testid="text-season-info">
-              Season 4 runs September 13 – November 22, 2025<br />
-              Games on Saturdays, 8:00 AM – 4:00 PM
+              Season 4 runs {season.rangeShort}<br />
+              Games on {season.day}, {season.timeWindow}
             </p>
             <div className="flex flex-wrap gap-4 text-sm justify-center sm:justify-start">
               <span className="bg-primary/10 text-primary px-3 py-1 rounded-full" data-testid="badge-inclusive">Inclusive</span>
@@ -43,6 +45,8 @@ export default function AboutSection() {
               src="/players-action.jpg"
               alt="OPV Players in Action"
               className="rounded-xl shadow-lg hover-lift w-full"
+              decoding="async"
+              loading="lazy"
               data-testid="img-players-action"
             />
           </div>

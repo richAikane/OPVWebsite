@@ -12,7 +12,7 @@ import Footer from '@/components/Footer';
 
 export default function OPVHome() {
   return (
-    <div className="min-h-screen">
+    <main id="main" role="main" className="min-h-screen">
       <Navigation />
       <HeroSection />
       <AboutSection />
@@ -24,6 +24,6 @@ export default function OPVHome() {
       <BoardSection />
       <FinalCTA />
       <Footer />
-    </div>
+    </main>
   );
 }
