@@ -74,15 +74,17 @@ export default function Navigation() {
               </label>
             </div>
 
-            {/* Nav Links: flexible, single-line, scroll if overflow */}
-            <div className="flex items-center flex-1 min-w-0 flex-nowrap justify-center gap-1 sm:gap-2 lg:gap-3 xl:gap-4 whitespace-nowrap overflow-x-auto">
+            {/* Nav Links: flexible, single-line, hide Aikāne ʻOhana at tight widths */}
+            <div className="flex items-center flex-1 min-w-0 flex-nowrap justify-center gap-1 sm:gap-2 lg:gap-3 xl:gap-4 whitespace-nowrap">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target={link.isAnchor ? undefined : "_blank"}
                   rel={link.isAnchor ? undefined : "noopener noreferrer"}
-                  className="nav-link text-foreground hover:text-muted-foreground px-2 lg:px-3 xl:px-4 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 shrink-0"
+                  className={`nav-link text-foreground hover:text-muted-foreground px-2 lg:px-3 xl:px-4 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 shrink-0 ${
+                    link.testId === "link-aikane" ? "hidden xl:inline-flex" : ""
+                  }`}
                   data-testid={link.testId}
                 >
                   {link.label}
