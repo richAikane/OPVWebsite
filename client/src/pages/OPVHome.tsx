@@ -3,11 +3,12 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import FeatureCards from '@/components/FeatureCards';
 import SponsorsSection from '@/components/SponsorsSection';
-import ScheduleBlocks from '@/components/ScheduleBlocks';
+import ScheduleSection from '@/components/ScheduleSection';
 import TournamentSection from '@/components/TournamentSection';
+import CaptainsCornerSection from '@/components/CaptainsCornerSection';
+import BoardSection from '@/components/BoardSection';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
-import LeadershipSection from '@/components/LeadershipSection';
 
 export default function OPVHome() {
   return (
@@ -16,11 +17,12 @@ export default function OPVHome() {
       <HeroSection />
       <AboutSection />
       <FeatureCards />
+      <ScheduleSection />
+      <CaptainsCornerSection />
       <SponsorsSection />
-      <ScheduleBlocks />
       <TournamentSection />
+      <BoardSection />
       <FinalCTA />
-      <LeadershipSection />
       <Footer />
     </div>
   );
