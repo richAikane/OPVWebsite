@@ -8,7 +8,8 @@ export default function HeroSection() {
           <img 
             src="/season4-poster.png"
             alt="Oʻahu Pride Volleyball Season 4 Poster"
-            className="mx-auto h-64 md:h-96 w-auto mb-6 hover-lift rounded-xl shadow-lg"
+            className="mx-auto w-full max-w-sm md:max-w-2xl lg:max-w-4xl mb-6 hover-lift rounded-xl shadow-lg"
+            style={{ aspectRatio: '16/9' }}
             decoding="async"
             fetchPriority="high"
             loading="eager"

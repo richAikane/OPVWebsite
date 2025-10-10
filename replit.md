@@ -166,6 +166,9 @@ Preferred communication style: Simple, everyday language.
   - VACANT position continues to show "?" placeholder
 - **Banner and Logo Updates:**
   - Replaced Season 4 poster with new 1920x1080 design featuring OPV logo, season dates, and Kapi'olani Park location
+  - Fixed banner aspect ratio to maintain locked 16:9 proportions across all screen sizes
+  - Changed from fixed heights to width-based sizing with `aspectRatio: '16/9'` style
+  - Banner height reduced on mobile for better UX (max-w-sm on mobile, max-w-2xl on tablet, max-w-4xl on desktop)
   - Fixed Linktree logo aspect ratio issue across all sections (desktop nav, mobile menu, footer)
   - Changed Linktree logo from fixed width/height to `w-auto` to prevent squishing on window resize
   - All social icons now maintain proper proportions at all screen sizes
