@@ -2,22 +2,22 @@ const boardMembers = [
   {
     name: "Nick Saumy",
     title: "Executive Director",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Kumu Bradford Lum",
     title: "Director at Large",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Michael Covert",
     title: "Director of Finance",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Win Ye",
     title: "Director of Community Outreach",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "VACANT",
@@ -28,22 +28,22 @@ const boardMembers = [
   {
     name: "Brandon Childress",
     title: "Director of Rules & Referees",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Nic Zappardino",
     title: "Director at Large",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Arthur Saumy",
     title: "Director of Operations",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
   },
   {
     name: "Alec Donnelly",
     title: "Director of Fields & Equipment",
-    photo: "https://static.wixstatic.com/media/6ea41b_a3de0db39cea446eb064bcd00db5a2e2~mv2.png",
+    photo: "/opv-logo.png",
     isSingle: true,
   },
 ];

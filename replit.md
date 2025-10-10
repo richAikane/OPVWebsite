@@ -159,3 +159,8 @@ Preferred communication style: Simple, everyday language.
   - Icons use react-icons/fa (FaFacebook, FaInstagram) for consistent styling
   - Desktop navigation displays all 3 social icons horizontally, mobile menu shows them vertically with labels
   - All social links centralized in `site.ts` for maintainability
+- **Board of Directors Updates:**
+  - Updated all board member photos to use the official OPV logo (`/opv-logo.png`)
+  - Replaced external Wix placeholder images with local logo asset
+  - All 8 board members now display consistent OPV branding
+  - VACANT position continues to show "?" placeholder
