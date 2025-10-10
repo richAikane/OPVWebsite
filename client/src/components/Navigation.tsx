@@ -49,15 +49,19 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="pride-toggle-switch-container flex items-center gap-x-3">
-              <span id="pride-toggle-label" className="font-semibold pride-text-animated">
+          <div className="hidden lg:flex items-center w-full flex-nowrap gap-4">
+            {/* Pride Mode: fixed-size cluster */}
+            <div className="pride-toggle-switch-container flex items-center shrink-0 gap-x-2 sm:gap-x-3 md:gap-x-4">
+              <span
+                id="pride-toggle-label"
+                className="font-semibold pride-text-animated whitespace-nowrap leading-none"
+              >
                 Pride Mode
               </span>
               <label className="pride-toggle-switch">
-                <input 
-                  type="checkbox" 
-                  id="prideToggle" 
+                <input
+                  type="checkbox"
+                  id="prideToggle"
                   checked={isPrideMode}
                   onChange={togglePrideMode}
                   aria-labelledby="pride-toggle-label"
@@ -70,52 +74,60 @@ export default function Navigation() {
               </label>
             </div>
 
-            {navLinks.map((link) => (
-              <a 
-                key={link.label}
-                href={link.href} 
-                target={link.isAnchor ? undefined : "_blank"}
-                rel={link.isAnchor ? undefined : "noopener noreferrer"}
-                className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" 
-                data-testid={link.testId}
-              >
-                {link.label}
-              </a>
-            ))}
+            {/* Nav Links: flexible, can wrap */}
+            <div className="flex items-center flex-1 min-w-0 flex-wrap justify-center gap-1 sm:gap-2">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.isAnchor ? undefined : "_blank"}
+                  rel={link.isAnchor ? undefined : "noopener noreferrer"}
+                  className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  data-testid={link.testId}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
 
-            <div className="flex items-center gap-2">
-              <a 
-                href={links.facebook} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Follow us on Facebook" 
+            {/* Social Icons: fixed-size cluster */}
+            <div className="flex items-center shrink-0 gap-2 sm:gap-3 md:gap-4">
+              <a
+                href={links.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
                 className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
                 data-testid="link-facebook-desktop"
               >
                 <FaFacebook className="h-8 w-8 text-foreground" />
               </a>
-              <a 
-                href={links.instagram} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Follow us on Instagram" 
+              <a
+                href={links.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
                 className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
                 data-testid="link-instagram-desktop"
               >
                 <FaInstagram className="h-8 w-8 text-foreground" />
               </a>
-              <a 
-                href={links.social} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Follow us on Social Media" 
+              <a
+                href={links.social}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Social Media"
                 className="hover:opacity-80 transition duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md"
                 data-testid="link-social-desktop"
               >
-                <img 
-                  src="/linktree-logo.png" 
-                  alt="Linktree" 
-                  className="h-8 w-auto rounded-lg"
+                <img
+                  src="/linktree-logo.png"
+                  alt="Linktree"
+                  width={32}
+                  height={32}
+                  className="h-8 w-auto object-contain shrink-0 rounded-lg"
+                  decoding="async"
+                  loading="lazy"
                 />
               </a>
             </div>
@@ -207,10 +219,12 @@ export default function Navigation() {
                       data-testid="link-social-mobile"
                       onClick={() => setIsOpen(false)}
                     >
-                      <img 
-                        src="/linktree-logo.png" 
-                        alt="Linktree" 
-                        className="h-6 w-auto rounded-lg"
+                      <img
+                        src="/linktree-logo.png"
+                        alt="Linktree"
+                        width={24}
+                        height={24}
+                        className="h-6 w-auto object-contain shrink-0 rounded-lg"
                       />
                       <span className="font-medium">Social Media</span>
                     </a>

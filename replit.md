@@ -170,3 +170,9 @@ Preferred communication style: Simple, everyday language.
   - Changed Linktree logo from fixed width/height to `w-auto` to prevent squishing on window resize
   - All social icons now maintain proper proportions at all screen sizes
   - Made Facebook and Instagram icons darker in footer (text-gray-800) for better visibility against gradient background
+- **Navigation Layout Improvements:**
+  - Restructured desktop navigation into 3 flex groups: Pride Mode (left), Nav Links (center), Social Icons (right)
+  - Pride Mode and Social Icons use `shrink-0` to maintain size; nav links use `flex-wrap` to wrap when space is tight
+  - Added explicit width/height attributes and `object-contain shrink-0` to Linktree images (desktop and mobile)
+  - Linktree logo now maintains perfect aspect ratio across all viewport widths (lg → 2xl)
+  - "Pride Mode" text has consistent spacing from social icons, preventing crowding on narrow screens
