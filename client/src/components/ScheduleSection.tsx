@@ -11,8 +11,8 @@ export default function ScheduleSection() {
           <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
           <div className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
             <p className="mb-4">
-              Season 4 will run {season.day} from {season.rangeShort}.
-              The games will run from {season.timeWindow}.
+              <span className="nowrap">Season&nbsp;4</span> will run {season.day} from <span className="nowrap">{season.rangeShort.replace(' ', '\u00A0').replace(/–/g, '–')}</span>.
+              {' '}The games will run from <span className="nowrap">{season.timeWindow.replace(/ /g, '\u00A0')}</span>.
             </p>
             <p className="mb-6">
               Specific team schedules will be posted on Team Sideline.

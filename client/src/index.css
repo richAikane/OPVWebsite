@@ -586,26 +586,28 @@ h1,h2,h3,.display,.hero h1{
   text-wrap:balance;
 }
 
-/* === Force color emoji rendering === */
-/* Target all emoji characters to use color emoji fonts */
-.pride-text-animated,
-h1, h2, h3, 
-span:has(> [data-emoji]), 
-[data-testid*="badge"],
-[data-testid*="heading"] {
+/* === Emoji font handling === */
+/* Use this class ONLY where colored emoji are needed */
+.emoji-text {
   font-family: "Barlow Condensed", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Symbol", system-ui, sans-serif;
+  font-variant-emoji: emoji;
 }
 
-/* Specific emoji rendering fix - force color */
+/* Font smoothing for better rendering */
 body, h1, h2, h3, span, p, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-/* Ensure emojis use system color fonts */
-* {
-  font-variant-emoji: emoji;
+/* Make numerals behave consistently */
+body, h1, h2, h3, p {
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+/* Utility to keep date/time tokens together */
+.nowrap {
+  white-space: nowrap;
 }
 
 /* === Links & buttons === */

@@ -8,7 +8,7 @@ export default function FinalCTA() {
           Season 4 is Underway
         </h2>
         <p className="text-base md:text-xl opacity-90 mb-8" data-testid="text-final-cta">
-          Season 4 runs {season.rangeShort} | Games on {season.day}, {season.timeWindow}
+          <span className="nowrap">Season&nbsp;4</span> runs <span className="nowrap">{season.rangeShort.replace(/ /g, '\u00A0')}</span> | Games on {season.day}, <span className="nowrap">{season.timeWindow.replace(/ /g, '\u00A0')}</span>
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a 
