@@ -104,11 +104,11 @@ export default function Navigation() {
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className="h-24 w-24 lg:h-9 lg:w-9"
+                  size="icon"
                   aria-label="Open menu"
                   data-testid="button-hamburger-menu"
                 >
-                  <Menu className="h-16 w-16 lg:h-6 lg:w-6" />
+                  <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-72" aria-describedby={undefined}>
