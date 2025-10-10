@@ -8,6 +8,7 @@ export default function SponsorsSection() {
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-sponsors">
             Our Amazing Sponsors
           </h2>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
           <p className="text-base md:text-base text-gray-700 max-w-2xl mx-auto leading-relaxed" data-testid="text-sponsors-subtitle">
             Mahalo to these incredible businesses and individuals who support our LGBTQIA+ volleyball community with aloha spirit.
           </p>

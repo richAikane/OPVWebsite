@@ -8,6 +8,7 @@ export default function FeatureCards() {
           <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-stay-connected">
             Stay Connected
           </h2>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

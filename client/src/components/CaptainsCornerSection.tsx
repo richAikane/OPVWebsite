@@ -35,6 +35,7 @@ export default function CaptainsCornerSection() {
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-captains-corner">
             Captain's Corner
           </h2>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
           <p className="text-base text-gray-700 max-w-2xl mx-auto leading-relaxed">
             OPV Team Captains, check out these links for tips and handy information.
           </p>

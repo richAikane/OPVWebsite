@@ -56,9 +56,10 @@ export default function BoardSection() {
     <section className="w-full py-16 bg-background">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800" data-testid="heading-board">
+          <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-board">
             Board of Directors
           </h2>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

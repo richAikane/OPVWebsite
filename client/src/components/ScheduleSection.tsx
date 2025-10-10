@@ -8,6 +8,7 @@ export default function ScheduleSection() {
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-schedule">
             Season 4 Schedule
           </h2>
+          <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
           <div className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
             <p className="mb-4">
               Season 4 will run {season.day} from {season.rangeShort}.
