@@ -164,3 +164,8 @@ Preferred communication style: Simple, everyday language.
   - Replaced external Wix placeholder images with local logo asset
   - All 8 board members now display consistent OPV branding
   - VACANT position continues to show "?" placeholder
+- **Banner and Logo Updates:**
+  - Replaced Season 4 poster with new 1920x1080 design featuring OPV logo, season dates, and Kapi'olani Park location
+  - Fixed Linktree logo aspect ratio issue across all sections (desktop nav, mobile menu, footer)
+  - Changed Linktree logo from fixed width/height to `w-auto` to prevent squishing on window resize
+  - All social icons now maintain proper proportions at all screen sizes

@@ -6,11 +6,11 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <div className="mb-8">
           <img 
-            src="/season4-poster.avif"
+            src="/season4-poster.png"
             alt="Oʻahu Pride Volleyball Season 4 Poster"
             className="mx-auto h-64 md:h-96 w-auto mb-6 hover-lift rounded-xl shadow-lg"
             decoding="async"
-            fetchpriority="high"
+            fetchPriority="high"
             loading="eager"
             data-testid="img-season-poster"
           />

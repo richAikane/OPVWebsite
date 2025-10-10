@@ -115,7 +115,7 @@ export default function Navigation() {
                 <img 
                   src="/linktree-logo.png" 
                   alt="Linktree" 
-                  className="h-9 w-9 rounded-lg"
+                  className="h-8 w-auto rounded-lg"
                 />
               </a>
             </div>
@@ -210,7 +210,7 @@ export default function Navigation() {
                       <img 
                         src="/linktree-logo.png" 
                         alt="Linktree" 
-                        className="h-8 w-8 rounded-lg"
+                        className="h-6 w-auto rounded-lg"
                       />
                       <span className="font-medium">Social Media</span>
                     </a>
