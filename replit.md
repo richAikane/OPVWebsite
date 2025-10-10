@@ -169,3 +169,4 @@ Preferred communication style: Simple, everyday language.
   - Fixed Linktree logo aspect ratio issue across all sections (desktop nav, mobile menu, footer)
   - Changed Linktree logo from fixed width/height to `w-auto` to prevent squishing on window resize
   - All social icons now maintain proper proportions at all screen sizes
+  - Made Facebook and Instagram icons darker in footer (text-gray-800) for better visibility against gradient background
