@@ -32,10 +32,10 @@ export default function CaptainsCornerSection() {
     <section className="w-full py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-12">
-          <h2 className="text-2xl md:text-4xl font-normal text-gray-600 mb-4" data-testid="heading-captains-corner">
+          <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-captains-corner">
             Captain's Corner
           </h2>
-          <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base text-gray-700 max-w-2xl mx-auto leading-relaxed">
             OPV Team Captains, check out these links for tips and handy information.
           </p>
         </div>
@@ -53,8 +53,8 @@ export default function CaptainsCornerSection() {
                 style={{ animationDelay: `${index * 100}ms` }}
                 data-testid={`resource-card-${index}`}
               >
-                <Icon className="w-16 h-16 text-gray-600 mb-4" />
-                <div className="text-lg text-gray-600 font-bold underline">
+                <Icon className="w-16 h-16 text-gray-700 mb-4" />
+                <div className="text-lg text-gray-700 font-semibold underline">
                   {resource.title}
                 </div>
               </a>

@@ -10,12 +10,12 @@ export default function HeroSection() {
             data-testid="img-season-poster"
           />
           <h1 className="text-3xl md:text-6xl font-display font-bold mb-4">
-            <span className="inline-block">🏳️‍🌈</span> <span className="pride-text-animated">Oʻahu Pride Volleyball</span> <span className="inline-block">🏐</span>
+            <span className="pride-text-animated">Oʻahu Pride Volleyball</span>
           </h1>
           <p className="text-base md:text-2xl text-gray-700 font-medium max-w-4xl mx-auto leading-relaxed" data-testid="text-tagline">
             Welcome to Oʻahu Pride Volleyball (formerly the Hawaii LGBTQ Volleyball League)… bringing the Oʻahu LGBTQIA+ community together through friendship and a shared love of volleyball.
           </p>
-          <p className="text-base md:text-xl text-gray-600 mt-4 font-semibold" data-testid="text-lokahi">
+          <p className="text-base md:text-xl text-gray-700 mt-4 font-semibold" data-testid="text-lokahi">
             LŌKAHI: Unity | Balance | Communication
           </p>
         </div>

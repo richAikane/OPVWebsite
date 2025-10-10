@@ -56,7 +56,7 @@ export default function BoardSection() {
     <section className="w-full py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-normal text-gray-600" data-testid="heading-board">
+          <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800" data-testid="heading-board">
             Board of Directors
           </h2>
         </div>
@@ -86,8 +86,8 @@ export default function BoardSection() {
                 )}
               </div>
               <div className="flex-1">
-                <div className="text-lg text-gray-600 font-bold">{member.name}</div>
-                <div className="text-sm text-gray-600">{member.title}</div>
+                <div className="text-lg text-gray-800 font-semibold">{member.name}</div>
+                <div className="text-sm text-gray-700">{member.title}</div>
               </div>
             </div>
           ))}
@@ -109,8 +109,8 @@ export default function BoardSection() {
                 />
               </div>
               <div className="flex-1">
-                <div className="text-lg text-gray-600 font-bold">{singleMember.name}</div>
-                <div className="text-sm text-gray-600">{singleMember.title}</div>
+                <div className="text-lg text-gray-800 font-semibold">{singleMember.name}</div>
+                <div className="text-sm text-gray-700">{singleMember.title}</div>
               </div>
             </div>
           </div>

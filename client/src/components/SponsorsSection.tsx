@@ -36,10 +36,10 @@ export default function SponsorsSection() {
     <section id="sponsors" className="w-full py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-4xl font-normal text-gray-600 mb-4" data-testid="heading-sponsors">
+          <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-sponsors">
             Our Amazing Sponsors
           </h2>
-          <p className="text-base md:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed" data-testid="text-sponsors-subtitle">
+          <p className="text-base md:text-base text-gray-700 max-w-2xl mx-auto leading-relaxed" data-testid="text-sponsors-subtitle">
             Mahalo to these incredible businesses and individuals who support our LGBTQIA+ volleyball community with aloha spirit.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function SponsorsSection() {
                   className="w-full h-[140px] object-contain mb-4"
                   loading="lazy"
                 />
-                <div className="text-base text-gray-600 font-normal mt-auto">
+                <div className="text-base text-gray-700 font-medium mt-auto">
                   {sponsor.name}
                 </div>
               </a>
@@ -79,7 +79,7 @@ export default function SponsorsSection() {
                   className="w-full h-[140px] object-contain mb-4"
                   loading="lazy"
                 />
-                <div className="text-base text-gray-600 font-normal mt-auto">
+                <div className="text-base text-gray-700 font-medium mt-auto">
                   {sponsor.name}
                 </div>
               </div>
@@ -88,14 +88,14 @@ export default function SponsorsSection() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-base text-gray-600 mb-6 leading-relaxed">
+          <p className="text-base text-gray-700 mb-6 leading-relaxed">
             Mahalo to these incredible businesses who support our LGBTQIA+ volleyball community with aloha spirit.
           </p>
           <a
             href="https://www.zeffy.com/en-US/fundraising/191a11d3-841f-420d-912a-990a33cace29"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-normal hover:bg-gray-800 transition-colors duration-300"
+            className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors duration-300"
             data-testid="button-become-sponsor"
           >
             Become a Sponsor
