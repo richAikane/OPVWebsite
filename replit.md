@@ -36,7 +36,11 @@ Preferred communication style: Simple, everyday language.
   - Plumeria #FFD166 (42, 100%, 70%) - Accent color and badges
   - Sand #F7EFEA (23, 48%, 94%) - Background color
   - Signature gradient: `linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)`
-- Typography: Inter for body text, Poppins for headings
+- **Typography System:**
+  - Headings (h1, h2, h3): Barlow Condensed (font-display font-bold text-gray-800)
+  - Body text: Inter (text-gray-700 for main content, text-gray-800 for emphasis)
+  - Buttons/labels: font-semibold
+  - Consistent font weights across all sections
 - Responsive design with mobile-first approach
 
 **Key Design Patterns:**
@@ -109,6 +113,26 @@ Preferred communication style: Simple, everyday language.
 **Key Features:**
 - Pride Mode toggle with animated rainbow gradients
 - Responsive navigation with mobile menu
-- Sponsor showcase section
+- Comprehensive homepage sections:
+  - Hero section with Season 4 poster and CTAs
+  - About OPV with league information
+  - Feature cards highlighting league benefits
+  - Season 4 Schedule with division cards (Competitive, Intermediate, Social) and PDF downloads
+  - Captain's Corner with resource links for team captains (using Lucide icons)
+  - Sponsors showcase with 6 sponsor logos and "Become a Sponsor" CTA
+  - Tournament registration section
+  - Board of Directors with member photos and titles
+  - Final CTA and footer
 - Links to external tournament registration and photo galleries
-- Accessibility features (focus states, alt text, semantic HTML)
+- Accessibility features (focus states, alt text, semantic HTML, data-testid attributes)
+- Design compliance: No emoji icons in UI (uses Lucide React icons instead), no single-side borders on rounded elements
+
+**Recent Updates (October 2025):**
+- Updated to new transparent OPV logo featuring rainbow arc, volleyball, Diamond Head mountain, and hibiscus flower
+- Standardized typography across all sections using Barlow Condensed for headings and Inter for body text
+- Improved text contrast with text-gray-700/800 color scheme
+- Removed all emoji characters from UI elements per design guidelines
+- Implemented ScheduleSection with division-specific schedules and PDF downloads
+- Added CaptainsCornerSection with resource cards for team captains
+- Updated SponsorsSection with grid layout and sponsor names
+- Created BoardSection showing all board members with photos and titles
