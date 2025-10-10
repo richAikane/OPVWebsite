@@ -29,8 +29,8 @@ export default function Navigation() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3 md:py-4">
           
-          {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* Logo (add explicit right margin so Pride Mode never crowds) */}
+          <div className="flex-shrink-0 mr-6 xl:mr-10">
             <a 
               href="https://www.aikaneohana.com/volleyball" 
               target="_blank" 
@@ -48,10 +48,10 @@ export default function Navigation() {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center w-full flex-nowrap gap-4">
+          {/* Desktop Navigation (no-wrap, single row, with overflow scroll) */}
+          <div className="hidden lg:flex items-center flex-nowrap gap-6">
             {/* Pride Mode: fixed-size cluster */}
-            <div className="pride-toggle-switch-container flex items-center shrink-0 gap-x-2 sm:gap-x-3 md:gap-x-4">
+            <div className="pride-toggle-switch-container flex items-center shrink-0 gap-x-4 lg:gap-x-5 xl:gap-x-6">
               <span
                 id="pride-toggle-label"
                 className="font-semibold pride-text-animated whitespace-nowrap leading-none"
@@ -74,15 +74,15 @@ export default function Navigation() {
               </label>
             </div>
 
-            {/* Nav Links: flexible, can wrap */}
-            <div className="flex items-center flex-1 min-w-0 flex-wrap justify-center gap-1 sm:gap-2">
+            {/* Nav Links: flexible, single-line, scroll if overflow */}
+            <div className="flex items-center flex-1 min-w-0 flex-nowrap justify-center gap-1 sm:gap-2 lg:gap-3 xl:gap-4 whitespace-nowrap overflow-x-auto">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target={link.isAnchor ? undefined : "_blank"}
                   rel={link.isAnchor ? undefined : "noopener noreferrer"}
-                  className="nav-link text-foreground hover:text-muted-foreground px-3 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  className="nav-link text-foreground hover:text-muted-foreground px-2 lg:px-3 xl:px-4 py-2 rounded-md text-sm font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 shrink-0"
                   data-testid={link.testId}
                 >
                   {link.label}
