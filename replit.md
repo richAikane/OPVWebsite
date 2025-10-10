@@ -145,3 +145,10 @@ Preferred communication style: Simple, everyday language.
 - Implemented alternating background pattern (Sand/White) with gradient bookends for professional visual separation
 - Updated FeatureCards to use elevated card design (bg-card with borders) on white background
 - Ensured consistent text-gray-700 color usage across all body text
+- **Text Rendering Fixes:**
+  - Scoped emoji font rules to `.emoji-text` utility class to prevent numeral spacing issues
+  - Added `font-variant-numeric: lining-nums proportional-nums` for consistent numeral rendering
+  - Created `.nowrap` utility class to prevent date/time tokens from breaking across lines
+  - Implemented non-breaking spaces (`\u00A0`) in season dates/times while maintaining dynamic data from `site.ts`
+  - Fixed stray meta/link tags in index.html by moving them inside `<head>` element
+  - All schedule text now uses dynamic `season` object with proper formatting to prevent numeral gaps
