@@ -11,7 +11,6 @@ export default function HeroSection() {
             className="mx-auto w-full max-w-sm md:max-w-2xl lg:max-w-4xl mb-6 hover-lift rounded-xl shadow-lg"
             style={{ aspectRatio: '16/9' }}
             decoding="async"
-            fetchPriority="high"
             loading="eager"
             data-testid="img-season-poster"
           />
