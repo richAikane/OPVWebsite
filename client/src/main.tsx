@@ -42,7 +42,7 @@ function applyHead() {
   const org = {
     '@context': 'https://schema.org',
     '@type': 'SportsOrganization',
-    name: 'Oahu Pride Volleyball',
+    name: 'Oʻahu Pride Volleyball',
     url: siteMeta.canonicalUrl,
     sameAs: [links.social, links.aikaneOhana],
   };
@@ -50,7 +50,7 @@ function applyHead() {
   const event = {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: 'Oahu Pride Volleyball — Season 4',
+    name: 'Oʻahu Pride Volleyball — Season 4',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     startDate: season.startISO,
@@ -59,7 +59,7 @@ function applyHead() {
     description: siteMeta.description,
     organizer: {
       '@type': 'SportsOrganization',
-      name: 'Oahu Pride Volleyball',
+      name: 'Oʻahu Pride Volleyball',
     },
   };
 
