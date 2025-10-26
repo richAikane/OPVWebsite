@@ -65,7 +65,9 @@ export default function Footer() {
               <img 
                 src="/linktree-logo.png" 
                 alt="Linktree" 
-                className="h-8 w-auto rounded-lg"
+                width={43}
+                height={43}
+                className="h-[43px] w-auto object-contain rounded-lg"
               />
             </a>
           </div>

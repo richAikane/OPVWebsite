@@ -125,9 +125,9 @@ export default function Navigation() {
                 <img
                   src="/linktree-logo.png"
                   alt="Linktree"
-                  width={40}
-                  height={40}
-                  className="h-10 w-auto object-contain shrink-0 rounded-lg"
+                  width={53}
+                  height={53}
+                  className="h-[53px] w-auto object-contain shrink-0 rounded-lg"
                   decoding="async"
                   loading="lazy"
                 />
@@ -224,9 +224,9 @@ export default function Navigation() {
                       <img
                         src="/linktree-logo.png"
                         alt="Linktree"
-                        width={30}
-                        height={30}
-                        className="h-8 w-auto object-contain shrink-0 rounded-lg"
+                        width={43}
+                        height={43}
+                        className="h-[43px] w-auto object-contain shrink-0 rounded-lg"
                       />
                       <span className="font-medium">Social Media</span>
                     </a>
