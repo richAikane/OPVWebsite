@@ -32,7 +32,7 @@ export default function Navigation() {
           {/* Logo (add explicit right margin so Pride Mode never crowds) */}
           <div className="flex-shrink-0 mr-6 xl:mr-10">
             <a 
-              href="https://www.aikaneohana.com/volleyball" 
+              href={links.home}
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="OPV Homepage" 
