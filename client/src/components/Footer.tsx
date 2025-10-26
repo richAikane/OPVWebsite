@@ -43,7 +43,7 @@ export default function Footer() {
               aria-label="Follow us on Facebook"
               data-testid="link-footer-facebook"
             >
-              <FaFacebook className="h-6 w-6 text-gray-800" />
+              <FaFacebook className="h-8 w-8 text-gray-800" />
             </a>
             <a 
               href={links.instagram} 
@@ -53,7 +53,7 @@ export default function Footer() {
               aria-label="Follow us on Instagram"
               data-testid="link-footer-instagram"
             >
-              <FaInstagram className="h-6 w-6 text-gray-800" />
+              <FaInstagram className="h-8 w-8 text-gray-800" />
             </a>
             <a 
               href={links.social} 

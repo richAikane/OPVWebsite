@@ -93,7 +93,7 @@ export default function Navigation() {
             </div>
 
             {/* Social Icons: fixed-size cluster */}
-            <div className="flex items-center shrink-0 gap-2 sm:gap-3 md:gap-4">
+            <div className="flex items-center shrink-0 gap-4">
               <a
                 href={links.facebook}
                 target="_blank"
