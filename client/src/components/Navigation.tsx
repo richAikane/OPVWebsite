@@ -148,7 +148,11 @@ export default function Navigation() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-72" aria-describedby={undefined}>
+              <SheetContent
+                side="right"
+                className="w-72 h-full max-h-[100dvh] overflow-y-auto overscroll-contain"
+                aria-describedby={undefined}
+              >
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col gap-6 mt-16">
                   
