@@ -18,7 +18,7 @@ export const season = {
 };
 
 export const links = {
-  home: "https://www.aikaneohana.com/volleyball",
+  home: "https://opv.netlify.app",
   donate:
     "https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league",
   rules:
@@ -74,4 +74,3 @@ export const sponsors: Sponsor[] = [
     website: "https://www.hawaiigaybar.com/",
   },
 ];
-
