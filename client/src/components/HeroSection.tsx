@@ -45,6 +45,15 @@ export default function HeroSection() {
           >
             View Final Standings
           </a>
+          <a 
+            href={links.photos}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white text-secondary font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
+            data-testid="button-hero-photos"
+          >
+            OPV Photos
+          </a>
         </div>
       </div>
     </section>

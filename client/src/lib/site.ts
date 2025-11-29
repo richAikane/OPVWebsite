@@ -23,7 +23,7 @@ export const links = {
     "https://www.zeffy.com/fundraising/support-season-4-oahu-pride-volleyball-league",
   rules:
     "https://www.aikaneohana.com/_files/ugd/952afa_30cbb111dd5a4dfbb12461685f0f4c42.pdf",
-  photos: "https://ericzmartin.com/",
+  photos: "https://ericzmartin.smugmug.com/",
   teamSideline: "https://teamsideline.com/sites/aikaneohana/schedules",
   tournament: "https://bit.ly/kaiauluclassic",
   store: "https://www.bonfire.com/opvseason4/",
