@@ -19,8 +19,7 @@ export default function FeatureCards() {
               href={links.teamSideline}
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}
-              className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
+              className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
               data-testid="button-view-schedule"
             >
               View Final Standings
@@ -34,7 +33,7 @@ export default function FeatureCards() {
               href={links.photos}
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-secondary text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
+              className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
               data-testid="button-visit-photos"
             >
               Visit Photo Site

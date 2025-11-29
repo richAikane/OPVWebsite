@@ -15,7 +15,7 @@ export default function FinalCTA() {
             href={links.donate}
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-white text-pink-600 font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-gray-100 transition-all duration-300"
+            className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-final-donate"
           >
             Donate

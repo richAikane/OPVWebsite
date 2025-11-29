@@ -30,8 +30,7 @@ export default function HeroSection() {
             href={links.donate}
             target="_blank" 
             rel="noopener noreferrer"
-            style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}
-            className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
+            className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-donate"
           >
             Donate
@@ -40,7 +39,7 @@ export default function HeroSection() {
             href={links.teamSideline}
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-secondary text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
+            className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-schedule"
           >
             View Final Standings
@@ -49,7 +48,7 @@ export default function HeroSection() {
             href={links.photos}
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-white text-secondary font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
+            className="rainbow-button text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-photos"
           >
             OPV Photos

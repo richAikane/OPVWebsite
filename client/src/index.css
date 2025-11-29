@@ -554,6 +554,20 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 
+  .rainbow-button {
+    background: linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7);
+    color: #ffffff;
+    border: none;
+  }
+
+  .rainbow-button:hover {
+    filter: brightness(1.04);
+  }
+
+  .rainbow-button:active {
+    filter: brightness(0.97);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
