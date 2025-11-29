@@ -6,26 +6,24 @@ export default function ScheduleSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-display font-bold text-gray-800 mb-4" data-testid="heading-schedule">
-            Season 4 Schedule
+            Season 4 Is Concluded
           </h2>
           <div className="w-24 h-1 mx-auto rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}></div>
           <div className="text-base text-gray-700 max-w-3xl mx-auto leading-relaxed">
             <p className="mb-4">
-              <span className="nowrap">Season&nbsp;4</span> will run {season.day} from <span className="nowrap">{season.rangeShort.replace(' ', '\u00A0').replace(/–/g, '–')}</span>.
-              {' '}The games will run from <span className="nowrap">{season.timeWindow.replace(/ /g, '\u00A0')}</span>.
+              Season&nbsp;4 has wrapped. Mahalo for making it our best season yet.
             </p>
             <p className="mb-6">
-              Specific team schedules will be posted on Team Sideline.
-              Download the app and sync your team schedule to your calendar!
+              Check back soon for spring tournament information—we’ll post registration, schedule, and location details as they’re finalized.
             </p>
             <a
-              href={links.teamSideline}
+              href={links.tournament}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors duration-300"
               data-testid="button-team-sideline"
             >
-              View All Schedules on Team Sideline
+              Spring Tournament Updates
             </a>
           </div>
         </div>

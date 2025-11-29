@@ -43,7 +43,7 @@ export default function HeroSection() {
             className="bg-secondary text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300"
             data-testid="button-hero-schedule"
           >
-            View Schedule
+            View Final Standings
           </a>
         </div>
       </div>

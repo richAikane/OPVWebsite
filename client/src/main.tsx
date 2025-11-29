@@ -50,9 +50,9 @@ function applyHead() {
   const event = {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: 'Oʻahu Pride Volleyball — Season 4',
+    name: 'Oʻahu Pride Volleyball — Season 4 (Concluded)',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    eventStatus: 'https://schema.org/EventScheduled',
+    eventStatus: 'https://schema.org/EventCompleted',
     startDate: season.startISO,
     endDate: season.endISO,
     image: [siteMeta.ogImage],

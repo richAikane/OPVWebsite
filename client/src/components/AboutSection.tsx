@@ -30,8 +30,7 @@ export default function AboutSection() {
               Our community celebrates diversity, fosters friendship, and creates lasting memories on and off the court. From beginners to all-stars, everyone has a place in our ʻohana!
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed font-semibold" data-testid="text-season-info">
-              <span className="nowrap">Season&nbsp;4</span> runs <span className="nowrap">{season.rangeShort.replace(/ /g, '\u00A0')}</span><br />
-              Games on {season.day}, <span className="nowrap">{season.timeWindow.replace(/ /g, '\u00A0')}</span>
+              Season 4 has concluded—mahalo for making it unforgettable. Check back soon for spring tournament news.
             </p>
             <div className="flex flex-wrap gap-4 text-sm justify-center sm:justify-start">
               <span className="bg-primary/10 text-primary px-3 py-1 rounded-full" data-testid="badge-inclusive">Inclusive</span>

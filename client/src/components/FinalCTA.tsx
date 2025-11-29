@@ -5,10 +5,10 @@ export default function FinalCTA() {
     <section className="w-full py-16 text-white" style={{ background: 'linear-gradient(135deg, #FF3E81, #FFD166 50%, #00A7C7)' }}>
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-4xl font-display font-bold mb-6" data-testid="heading-final-cta">
-          Season 4 is Underway
+          Season 4 is Concluded
         </h2>
         <p className="text-base md:text-xl opacity-90 mb-8" data-testid="text-final-cta">
-          <span className="nowrap">Season&nbsp;4</span> runs <span className="nowrap">{season.rangeShort.replace(/ /g, '\u00A0')}</span> | Games on {season.day}, <span className="nowrap">{season.timeWindow.replace(/ /g, '\u00A0')}</span>
+          Mahalo to every player, volunteer, and sponsor for an incredible Season&nbsp;4. Check back soon for spring tournament details.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a 

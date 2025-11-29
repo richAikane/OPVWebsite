@@ -14,7 +14,7 @@ export default function FeatureCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-card border border-card-border rounded-2xl p-8 shadow-sm hover-lift text-center" data-testid="card-schedules">
             <h3 className="text-2xl font-display font-bold text-gray-800 mb-4">Schedules & Standings</h3>
-            <p className="text-gray-700 mb-6">See match schedules, standings & results on TeamSideline.</p>
+            <p className="text-gray-700 mb-6">See final standings & results on TeamSideline.</p>
             <a 
               href={links.teamSideline}
               target="_blank" 
@@ -23,7 +23,7 @@ export default function FeatureCards() {
               className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover-lift transition-all duration-300 inline-block"
               data-testid="button-view-schedule"
             >
-              View Schedule
+              View Final Standings
             </a>
           </div>
 

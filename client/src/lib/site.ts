@@ -1,7 +1,7 @@
 export const siteMeta = {
-  title: "Oʻahu Pride Volleyball — Season 4 (Fall 2025)",
+  title: "Oʻahu Pride Volleyball — Season 4 Concluded",
   description:
-    "Inclusive, all-gender grass volleyball league in Honolulu bringing the Oʻahu LGBTQIA+ community together.",
+    "Season 4 has wrapped. Mahalo to everyone who played and volunteered! Check back soon for spring tournament details.",
   // Update this when the final domain is known. Runtime code will set canonical/og:url from here.
   canonicalUrl: "https://oahupridevolleyball.org/",
   ogImage:
