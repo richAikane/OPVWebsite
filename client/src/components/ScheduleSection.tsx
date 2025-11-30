@@ -1,5 +1,3 @@
-import { links, season } from '@/lib/site';
-
 export default function ScheduleSection() {
   return (
     <section className="w-full py-16 bg-background">
@@ -16,15 +14,12 @@ export default function ScheduleSection() {
             <p className="mb-6">
               Check back soon for spring tournament information—we’ll post registration, schedule, and location details as they’re finalized.
             </p>
-            <a
-              href={links.tournament}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gray-700 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-gray-800 transition-colors duration-300"
+            <div
+              className="inline-block bg-gray-100 text-gray-700 px-8 py-4 rounded-full text-base font-semibold border border-dashed border-gray-300"
               data-testid="button-team-sideline"
             >
-              Spring Tournament Updates
-            </a>
+              Spring tournament updates coming soon
+            </div>
           </div>
         </div>
 

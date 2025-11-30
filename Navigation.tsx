@@ -15,7 +15,7 @@ export default function Navigation() {
     { href: links.donate, label: "Donate", testId: "link-donate" },
     { href: links.rules, label: "Rules", testId: "link-rules" },
     { href: links.photos, label: "Photos", testId: "link-photos" },
-    { href: links.tournament, label: "Tournament", testId: "link-tournament" },
+    { href: "#tournament", label: "Tournament", testId: "link-tournament", isAnchor: true },
     { href: links.store, label: "Store", testId: "link-store" },
     { href: links.aikaneOhana, label: "Aikāne ʻOhana", testId: "link-aikane" },
     { href: "#sponsors", label: "Sponsors", testId: "link-sponsors", isAnchor: true },
